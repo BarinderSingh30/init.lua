@@ -21,3 +21,9 @@ vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to upper window" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right window" })
+
+-- Terminal
+vim.keymap.set("n", "<leader>tv", "<cmd>vsplit | terminal<cr>", { desc = "Terminal in vertical split" })
+vim.keymap.set("n", "<leader>th", "<cmd>split | terminal<cr>", { desc = "Terminal in horizontal split" })
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("t", "<C-q>", "<C-\\><C-n><cmd>bdelete!<cr>", { desc = "Close terminal" })
